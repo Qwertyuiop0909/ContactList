@@ -23,12 +23,6 @@ function Form() {
           aria-describedby="inputGroup-sizing-default"
           onChange={(e) => setInput(e.target.value)}
         />
-        <button
-          type="submit"
-          className="btn btn-primary"
-        >
-          Add
-        </button>
       </div>
     </form>
   )

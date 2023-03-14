@@ -1,18 +1,14 @@
 import './App.css'
+import Aside from './components/Aside/Aside'
+import ContactHelper from './components/ContactHelper/ContactHelper'
 import ContextProvider from './components/ContextProvider/ContextProvider'
-import Footer from './components/Footer/Footer'
-import Header from './components/Header/Header'
-import TodoList from './components/TodoList/Todolist'
 
 function App() {
   return (
     <div className="App app">
       <ContextProvider>
-        <Header />
-        <hr />
-        <TodoList />
-        <hr />
-        <Footer />
+        <Aside />
+        <ContactHelper />
       </ContextProvider>
     </div>
   )
