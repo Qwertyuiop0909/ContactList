@@ -1,17 +1,15 @@
-import ContactList from '../ContactList/ContactList'
-import Form from '../Form/Form'
+import SearchBar from '../SearchBar/SearchBar'
 import styles from './aside.module.css'
+import ContactList from '../ContactList/ContactList'
+import AddContact from '../AddContact/AddContact'
 
 export default function Aside() {
   return (
     <aside className={styles.aside}>
-      <Form />
-      <button
-        type="button"
-        className={`btn btn-primary ${styles.addbutton}`}
-      >
-        Add
-      </button>
+      <div className={styles.interface}>
+        <SearchBar />
+        <AddContact />
+      </div>
       <hr />
       <ContactList />
     </aside>

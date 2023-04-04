@@ -1,30 +1,21 @@
-import React, { useContext, useMemo } from 'react'
-import useTodos from '../../customhooks/useTodos'
+import React, { useContext, useState } from 'react'
 
-const TodoContext = React.createContext()
+const ContactContext = React.createContext()
 
-const TodoHelpersContext = React.createContext()
+const ContactHelpersContext = React.createContext()
 
 export default function ContextProvider({ children }) {
-  const {
-    Todos, addNewTodo, deleteTodo, clearAllTodos,
-  } = useTodos()
-
-  const helperTodo = useMemo(() => ({
-    addNewTodo,
-    deleteTodo,
-    clearAllTodos,
-  }), [])
+  const [contactList, setContactList] = useState({})
 
   return (
     // eslint-disable-next-line react/jsx-no-constructed-context-values
-    <TodoContext.Provider value={{ Todos }}>
-      <TodoHelpersContext.Provider value={helperTodo}>
+    <ContactContext.Provider value={{ contactList }}>
+      <ContactHelpersContext.Provider value={setContactList}>
         {children}
-      </TodoHelpersContext.Provider>
-    </TodoContext.Provider>
+      </ContactHelpersContext.Provider>
+    </ContactContext.Provider>
   )
 }
 
-export const useTodosContext = () => useContext(TodoContext)
-export const useTodoHelpersContext = () => useContext(TodoHelpersContext)
+export const useContactContext = () => useContext(ContactContext)
+export const useContactHelpersContext = () => useContext(ContactHelpersContext)

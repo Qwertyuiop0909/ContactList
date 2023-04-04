@@ -1,0 +1,17 @@
+.form{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-gap: 5px;
+    width: 100%
+}
+
+.field{
+    width: 100%;
+}
+
+.error{
+    color: red;
+}

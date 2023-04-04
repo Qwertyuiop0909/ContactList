@@ -1,0 +1,94 @@
+.cardbuttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px;
+    min-width: 160px;
+}
+
+.disabled{
+    text-decoration:line-through;
+}
+
+$avatarSize: 150px;
+
+.avatar {
+	width: $avatarSize;
+	height: $avatarSize;
+	object-fit: cover;
+}
+
+.maincard{
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    grid-gap: 1rem;
+}
+
+.cardimg{
+    padding: 30px;
+    border: 1px solid black;
+    position: relative;
+    button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:0;
+        height: 2rem;
+        width: 2rem;
+        position: absolute;
+        top:-2rem;
+        left:-2rem;
+        border: none;
+        appearance: none;
+        background-color: white;
+        color: lightgray;
+        font-size: 25px;
+    }
+    button:hover{
+        color: gray;
+    }
+}
+.maindetails{
+    position: relative;
+    padding: 30px;
+    border: 1px solid black;
+    i{
+        background-color: white;
+        color: lightgray;
+        font-size: 25px;
+    }
+    i:hover{
+        color: gray;
+    }
+    .icon{
+        color: red;
+    }
+    .icon:hover{
+        color: lightcoral
+    }
+    .likebutton{
+        background-color: white;
+        appearance: none;
+        border: none;
+        padding: 0;
+    }
+}
+
+.delbutton{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.details{
+    margin-top: 1rem;
+    div{
+        border: 1px solid black;
+        padding: 2px 4px;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    
+}

@@ -1,0 +1,48 @@
+.navlnk{
+    text-decoration: none;
+    appearance: none;
+}
+
+.selected{
+    background-color: grey;
+}
+
+.card_item{
+    border-radius: 0;
+    border: none;
+    text-decoration: none;
+    appearance: none;
+    color: black;
+    background-color: inherit;
+    padding: 0;
+    text-align: start;
+    div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 8px;
+    }
+    i{
+        display: none;
+    }
+    .icon{
+        display: inline;
+        color: rgb(22, 15, 15);
+    }
+}
+
+.card_item:hover{
+    i{
+        display: inline;
+        color: rgb(74, 145, 244);
+    }
+    .icon{
+        color: red
+    }
+}
+.heartButton{
+    border: none;
+    appearance: none;
+    padding: 0;
+    background-color: inherit;
+}

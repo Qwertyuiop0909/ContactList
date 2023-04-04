@@ -27,5 +27,7 @@ module.exports = {
     'import/no-cycle': 0,
     'linebreak-style': 0,
     'import/no-extraneous-dependencies': 0,
+    'react/jsx-filename-extension': 0,
+    'react/function-component-definition': 0,
   },
 }

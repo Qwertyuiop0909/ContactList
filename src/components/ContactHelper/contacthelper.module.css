@@ -1,8 +1,9 @@
-.list{
-    width: calc(0.75*100vw);
-    min-width: 500px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2px;
-    align-self: center;
+.helper{
+    width: 100%;
+}
+
+@media screen and (min-width: 860px) {
+    .helper{
+        width: 100vw;
+    }
 }
